@@ -1,0 +1,13 @@
+{
+    "Market": "市场",
+    "Bidding zone the prices and the CO2 intensity are for": "价格和 CO2 强度所对应的竞价区",
+    "Forecast horizon": "预测范围",
+    "Without an API key the API serves up to 48 h": "没有 API 密钥时，API 最多提供 48 小时",
+    "Window length": "时段长度",
+    "Hours the cheapest and greenest window should cover, e.g. the runtime of your dishwasher or the charging time of your car": "最便宜和最清洁时段应覆盖的小时数，例如洗碗机运行时间或汽车充电时间",
+    "Update interval (minutes)": "更新间隔（分钟）",
+    "15 to 120 minutes": "15 到 120 分钟",
+    "API key (optional)": "API 密钥（可选）",
+    "Only needed for more than 48 h; leave empty for public access": "仅在超过 48 小时时需要；留空即使用公共访问",
+    "Setup guide and API access": "设置指南与 API 访问"
+}

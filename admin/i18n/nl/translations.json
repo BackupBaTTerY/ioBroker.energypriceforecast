@@ -1,0 +1,13 @@
+{
+    "Market": "Markt",
+    "Bidding zone the prices and the CO2 intensity are for": "Biedzone waarvoor de prijzen en de CO2-intensiteit gelden",
+    "Forecast horizon": "Voorspellingshorizon",
+    "Without an API key the API serves up to 48 h": "Zonder API-sleutel levert de API tot 48 u",
+    "Window length": "Vensterlengte",
+    "Hours the cheapest and greenest window should cover, e.g. the runtime of your dishwasher or the charging time of your car": "Aantal uren dat het goedkoopste en groenste venster moet beslaan, bijv. de looptijd van de vaatwasser of de laadtijd van de auto",
+    "Update interval (minutes)": "Update-interval (minuten)",
+    "15 to 120 minutes": "15 tot 120 minuten",
+    "API key (optional)": "API-sleutel (optioneel)",
+    "Only needed for more than 48 h; leave empty for public access": "Alleen nodig voor meer dan 48 u; laat leeg voor publieke toegang",
+    "Setup guide and API access": "Handleiding en API-toegang"
+}

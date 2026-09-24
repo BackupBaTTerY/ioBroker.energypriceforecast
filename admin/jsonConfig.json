@@ -1,0 +1,228 @@
+{
+    "i18n": true,
+    "type": "panel",
+    "items": {
+        "market": {
+            "type": "select",
+            "label": "Market",
+            "help": "Bidding zone the prices and the CO2 intensity are for",
+            "options": [
+                {
+                    "label": "AT – Austria",
+                    "value": "AT"
+                },
+                {
+                    "label": "BE – Belgium",
+                    "value": "BE"
+                },
+                {
+                    "label": "BG – Bulgaria",
+                    "value": "BG"
+                },
+                {
+                    "label": "CH – Switzerland",
+                    "value": "CH"
+                },
+                {
+                    "label": "CZ – Czechia",
+                    "value": "CZ"
+                },
+                {
+                    "label": "DE – Germany / Luxembourg",
+                    "value": "DE"
+                },
+                {
+                    "label": "DK1 – Denmark West (DK1)",
+                    "value": "DK1"
+                },
+                {
+                    "label": "DK2 – Denmark East (DK2)",
+                    "value": "DK2"
+                },
+                {
+                    "label": "ES – Spain",
+                    "value": "ES"
+                },
+                {
+                    "label": "FI – Finland",
+                    "value": "FI"
+                },
+                {
+                    "label": "FR – France",
+                    "value": "FR"
+                },
+                {
+                    "label": "GR – Greece",
+                    "value": "GR"
+                },
+                {
+                    "label": "ITN – Italy North (NORD)",
+                    "value": "ITN"
+                },
+                {
+                    "label": "IT_CNOR – Italy Centre-North (CNOR)",
+                    "value": "IT_CNOR"
+                },
+                {
+                    "label": "IT_CSUD – Italy Centre-South (CSUD)",
+                    "value": "IT_CSUD"
+                },
+                {
+                    "label": "IT_SUD – Italy South (SUD)",
+                    "value": "IT_SUD"
+                },
+                {
+                    "label": "IT_CALA – Italy Calabria (CALA)",
+                    "value": "IT_CALA"
+                },
+                {
+                    "label": "IT_SICI – Italy Sicily (SICI)",
+                    "value": "IT_SICI"
+                },
+                {
+                    "label": "IT_SARD – Italy Sardinia (SARD)",
+                    "value": "IT_SARD"
+                },
+                {
+                    "label": "NL – Netherlands",
+                    "value": "NL"
+                },
+                {
+                    "label": "NO1 – Norway NO1 (Oslo)",
+                    "value": "NO1"
+                },
+                {
+                    "label": "NO2 – Norway NO2 (Kristiansand)",
+                    "value": "NO2"
+                },
+                {
+                    "label": "NO3 – Norway NO3 (Trondheim)",
+                    "value": "NO3"
+                },
+                {
+                    "label": "NO4 – Norway NO4 (Tromsø)",
+                    "value": "NO4"
+                },
+                {
+                    "label": "NO5 – Norway NO5 (Bergen)",
+                    "value": "NO5"
+                },
+                {
+                    "label": "PL – Poland",
+                    "value": "PL"
+                },
+                {
+                    "label": "PT – Portugal",
+                    "value": "PT"
+                },
+                {
+                    "label": "RO – Romania",
+                    "value": "RO"
+                },
+                {
+                    "label": "SE1 – Sweden SE1 (Luleå)",
+                    "value": "SE1"
+                },
+                {
+                    "label": "SE2 – Sweden SE2 (Sundsvall)",
+                    "value": "SE2"
+                },
+                {
+                    "label": "SE3 – Sweden SE3 (Stockholm)",
+                    "value": "SE3"
+                },
+                {
+                    "label": "SE4 – Sweden SE4 (Malmö)",
+                    "value": "SE4"
+                },
+                {
+                    "label": "SK – Slovakia",
+                    "value": "SK"
+                }
+            ],
+            "xs": 12,
+            "sm": 12,
+            "md": 6,
+            "lg": 4,
+            "xl": 4
+        },
+        "horizonHours": {
+            "type": "select",
+            "label": "Forecast horizon",
+            "help": "Without an API key the API serves up to 48 h",
+            "options": [
+                {
+                    "label": "24 h",
+                    "value": 24
+                },
+                {
+                    "label": "48 h",
+                    "value": 48
+                },
+                {
+                    "label": "72 h",
+                    "value": 72
+                },
+                {
+                    "label": "120 h",
+                    "value": 120
+                }
+            ],
+            "xs": 12,
+            "sm": 12,
+            "md": 6,
+            "lg": 4,
+            "xl": 4,
+            "newLine": true
+        },
+        "windowHours": {
+            "type": "number",
+            "label": "Window length",
+            "help": "Hours the cheapest and greenest window should cover, e.g. the runtime of your dishwasher or the charging time of your car",
+            "min": 1,
+            "max": 24,
+            "step": 1,
+            "xs": 12,
+            "sm": 12,
+            "md": 6,
+            "lg": 4,
+            "xl": 4
+        },
+        "intervalMinutes": {
+            "type": "number",
+            "label": "Update interval (minutes)",
+            "help": "15 to 120 minutes",
+            "min": 15,
+            "max": 120,
+            "step": 5,
+            "xs": 12,
+            "sm": 12,
+            "md": 6,
+            "lg": 4,
+            "xl": 4,
+            "newLine": true
+        },
+        "apiKey": {
+            "type": "password",
+            "label": "API key (optional)",
+            "help": "Only needed for more than 48 h; leave empty for public access",
+            "xs": 12,
+            "sm": 12,
+            "md": 6,
+            "lg": 4,
+            "xl": 4,
+            "newLine": true
+        },
+        "apiKeyLink": {
+            "type": "staticLink",
+            "label": "Setup guide and API access",
+            "href": "https://energypriceforecast.eu/en/iobroker-electricity-price-co2-forecast/",
+            "button": true,
+            "xs": 12,
+            "sm": 12,
+            "md": 6,
+            "lg": 4,
+            "xl": 4
+        }
+    }
+}

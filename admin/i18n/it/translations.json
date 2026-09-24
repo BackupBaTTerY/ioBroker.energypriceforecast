@@ -1,0 +1,13 @@
+{
+    "Market": "Mercato",
+    "Bidding zone the prices and the CO2 intensity are for": "Zona di offerta a cui si riferiscono i prezzi e l'intensità di CO2",
+    "Forecast horizon": "Orizzonte di previsione",
+    "Without an API key the API serves up to 48 h": "Senza chiave API, l'API fornisce fino a 48 h",
+    "Window length": "Durata della finestra",
+    "Hours the cheapest and greenest window should cover, e.g. the runtime of your dishwasher or the charging time of your car": "Ore che la finestra più economica e più verde deve coprire, ad es. il ciclo della lavastoviglie o la ricarica dell'auto",
+    "Update interval (minutes)": "Intervallo di aggiornamento (minuti)",
+    "15 to 120 minutes": "Da 15 a 120 minuti",
+    "API key (optional)": "Chiave API (facoltativa)",
+    "Only needed for more than 48 h; leave empty for public access": "Necessaria solo oltre 48 h; lasciare vuoto per l'accesso pubblico",
+    "Setup guide and API access": "Guida e accesso API"
+}

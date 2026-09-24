@@ -1,0 +1,118 @@
+{
+    "common": {
+        "name": "energypriceforecast",
+        "version": "0.1.0",
+        "news": {
+            "0.1.0": {
+                "en": "Initial release: price and CO2 forecast up to 120 h for 33 European markets, cheapest and greenest window, 15-minute price series",
+                "de": "Erste Version: Preis- und CO2-Prognose bis 120 h für 33 europäische Märkte, günstigstes und grünstes Zeitfenster, Preisreihe in 15-Minuten-Slots",
+                "ru": "Первый выпуск: прогноз цены и CO2 до 120 ч для 33 европейских рынков, самое дешёвое и самое чистое окно, ценовой ряд с шагом 15 минут",
+                "pt": "Versão inicial: previsão de preço e CO2 até 120 h para 33 mercados europeus, janela mais barata e mais verde, série de preços em intervalos de 15 minutos",
+                "nl": "Eerste versie: prijs- en CO2-voorspelling tot 120 u voor 33 Europese markten, goedkoopste en groenste venster, prijsreeks in kwartierslots",
+                "fr": "Première version : prévision du prix et du CO2 jusqu'à 120 h pour 33 marchés européens, fenêtre la moins chère et la plus verte, série de prix au quart d'heure",
+                "it": "Prima versione: previsione di prezzo e CO2 fino a 120 h per 33 mercati europei, finestra più economica e più verde, serie di prezzi a intervalli di 15 minuti",
+                "es": "Primera versión: previsión de precio y CO2 hasta 120 h para 33 mercados europeos, ventana más barata y más limpia, serie de precios en tramos de 15 minutos",
+                "pl": "Pierwsza wersja: prognoza ceny i CO2 do 120 h dla 33 rynków europejskich, najtańsze i najczystsze okno, szereg cen w 15-minutowych slotach",
+                "uk": "Перший випуск: прогноз ціни та CO2 до 120 год для 33 європейських ринків, найдешевше та найчистіше вікно, ціновий ряд із кроком 15 хвилин",
+                "zh-cn": "首个版本：33 个欧洲市场最长 120 小时的电价与 CO2 预测，最便宜与最清洁时段，15 分钟粒度的价格序列"
+            }
+        },
+        "titleLang": {
+            "en": "Energy Price Forecast EU",
+            "de": "Strompreis-Prognose EU",
+            "ru": "Прогноз цен на электроэнергию EU",
+            "pt": "Previsão de preços de energia UE",
+            "nl": "Energieprijsvoorspelling EU",
+            "fr": "Prévision des prix de l'électricité UE",
+            "it": "Previsione prezzi energia UE",
+            "es": "Previsión de precios de la energía UE",
+            "pl": "Prognoza cen energii UE",
+            "uk": "Прогноз цін на електроенергію EU",
+            "zh-cn": "欧洲电价预测"
+        },
+        "desc": {
+            "en": "Electricity price and CO2 forecast up to 120 h beyond day-ahead, with the cheapest and greenest time window, for 33 European markets",
+            "de": "Strompreis- und CO2-Prognose bis 120 h über Day-Ahead hinaus, mit günstigstem und grünstem Zeitfenster, für 33 europäische Märkte",
+            "ru": "Прогноз цены электроэнергии и CO2 до 120 ч сверх рынка на сутки вперёд, с самым дешёвым и самым чистым окном, для 33 европейских рынков",
+            "pt": "Previsão de preço da eletricidade e CO2 até 120 h além do mercado diário, com a janela mais barata e mais verde, para 33 mercados europeus",
+            "nl": "Stroomprijs- en CO2-voorspelling tot 120 u na de day-ahead, met het goedkoopste en groenste tijdvenster, voor 33 Europese markten",
+            "fr": "Prévision du prix de l'électricité et du CO2 jusqu'à 120 h au-delà du day-ahead, avec la fenêtre la moins chère et la plus verte, pour 33 marchés européens",
+            "it": "Previsione del prezzo dell'elettricità e della CO2 fino a 120 h oltre il day-ahead, con la finestra più economica e più verde, per 33 mercati europei",
+            "es": "Previsión del precio de la electricidad y del CO2 hasta 120 h más allá del mercado diario, con la ventana más barata y más limpia, para 33 mercados europeos",
+            "pl": "Prognoza ceny energii i CO2 do 120 h poza rynkiem dnia następnego, z najtańszym i najczystszym oknem czasowym, dla 33 rynków europejskich",
+            "uk": "Прогноз ціни електроенергії та CO2 до 120 год понад ринок на добу наперед, з найдешевшим і найчистішим вікном, для 33 європейських ринків",
+            "zh-cn": "33 个欧洲市场的电价与 CO2 预测，超出日前市场最长 120 小时，并给出最便宜和最清洁的时段"
+        },
+        "authors": ["BackupBaTTerY <StrompreisVorhersage@proton.me>"],
+        "keywords": ["electricity price", "strompreis", "forecast", "day-ahead", "co2", "energy", "dynamic tariff"],
+        "licenseInformation": {
+            "license": "MIT",
+            "type": "limited",
+            "link": "https://energypriceforecast.eu/?lang=en&tab=legal&legal_section=terms"
+        },
+        "platform": "Javascript/Node.js",
+        "icon": "energypriceforecast.png",
+        "enabled": true,
+        "extIcon": "https://raw.githubusercontent.com/BackupBaTTerY/ioBroker.energypriceforecast/main/admin/energypriceforecast.png",
+        "readme": "https://github.com/BackupBaTTerY/ioBroker.energypriceforecast/blob/main/README.md",
+        "loglevel": "info",
+        "tier": 3,
+        "mode": "daemon",
+        "type": "energy",
+        "compact": true,
+        "connectionType": "cloud",
+        "dataSource": "poll",
+        "adminUI": {
+            "config": "json"
+        },
+        "dependencies": [
+            {
+                "js-controller": ">=6.0.11"
+            }
+        ],
+        "globalDependencies": [
+            {
+                "admin": ">=7.4.10"
+            }
+        ]
+    },
+    "encryptedNative": ["apiKey"],
+    "protectedNative": ["apiKey"],
+    "native": {
+        "market": "DE",
+        "horizonHours": 48,
+        "windowHours": 4,
+        "intervalMinutes": 30,
+        "apiKey": ""
+    },
+    "objects": [],
+    "instanceObjects": [
+        {
+            "_id": "info",
+            "type": "channel",
+            "common": {
+                "name": {
+                    "en": "Information",
+                    "de": "Informationen"
+                }
+            },
+            "native": {}
+        },
+        {
+            "_id": "info.connection",
+            "type": "state",
+            "common": {
+                "role": "indicator.connected",
+                "name": {
+                    "en": "Last update succeeded",
+                    "de": "Letzte Aktualisierung erfolgreich"
+                },
+                "type": "boolean",
+                "read": true,
+                "write": false,
+                "def": false
+            },
+            "native": {}
+        }
+    ]
+}

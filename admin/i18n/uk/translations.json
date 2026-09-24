@@ -1,0 +1,13 @@
+{
+    "Market": "Ринок",
+    "Bidding zone the prices and the CO2 intensity are for": "Торгова зона, до якої належать ціни та інтенсивність CO2",
+    "Forecast horizon": "Горизонт прогнозу",
+    "Without an API key the API serves up to 48 h": "Без API-ключа API надає до 48 год",
+    "Window length": "Тривалість вікна",
+    "Hours the cheapest and greenest window should cover, e.g. the runtime of your dishwasher or the charging time of your car": "Скільки годин має охоплювати найдешевше та найчистіше вікно, наприклад час роботи посудомийної машини або заряджання авто",
+    "Update interval (minutes)": "Інтервал оновлення (хвилини)",
+    "15 to 120 minutes": "Від 15 до 120 хвилин",
+    "API key (optional)": "API-ключ (необов'язково)",
+    "Only needed for more than 48 h; leave empty for public access": "Потрібен лише для понад 48 год; залиште порожнім для відкритого доступу",
+    "Setup guide and API access": "Інструкція та доступ до API"
+}
