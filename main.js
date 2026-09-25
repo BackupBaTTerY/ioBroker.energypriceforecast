@@ -3,6 +3,7 @@
 const utils = require('@iobroker/adapter-core');
 const { ApiError, REJECTED_API_KEY_STATES, fetchSummary, fetchPrices } = require('./lib/api');
 const { CHANNELS, STATES, extractValues, resolveUnit, unitsFrom } = require('./lib/states');
+const { resolveRetailSettings, applyFormula } = require('./lib/retail');
 const { version } = require('./package.json');
 
 const HORIZON_OPTIONS = [24, 48, 72, 120];
@@ -52,10 +53,15 @@ class EnergyPriceForecast extends utils.Adapter {
             return;
         }
         const horizonHours = Number(this.config.horizonHours);
+        const retail = resolveRetailSettings(market, this.config);
+        if (retail.problem) {
+            this.log.warn(retail.problem);
+        }
         this.settings = {
             market,
             horizonHours: HORIZON_OPTIONS.includes(horizonHours) ? horizonHours : DEFAULT_HORIZON_HOURS,
             windowHours: clampInt(this.config.windowHours, 1, 24, DEFAULT_WINDOW_HOURS),
+            retail,
             // Decrypted by js-controller, see encryptedNative in io-package.json.
             apiKey: String(this.config.apiKey || '').trim(),
             userAgent: `ioBroker.energypriceforecast/${version}`,
@@ -94,7 +100,7 @@ class EnergyPriceForecast extends utils.Adapter {
     async poll() {
         this.pollTimer = null;
         try {
-            const summary = await fetchSummary(this.settings);
+            let summary = await fetchSummary(this.settings);
             let prices;
             try {
                 prices = await fetchPrices(this.settings);
@@ -104,6 +110,10 @@ class EnergyPriceForecast extends utils.Adapter {
                 this.log.warn(`Price series not updated: ${error.message}`);
             }
             await this.checkApiKey(summary.meta?.api_key_state);
+            const { retail } = this.settings;
+            if (retail.basis === 'formula') {
+                ({ summary, prices } = applyFormula(summary, prices, retail.factor, retail.surcharge));
+            }
             await this.writeValues(summary, prices);
             await this.setState('info.connection', true, true);
         } catch (error) {
@@ -141,7 +151,7 @@ class EnergyPriceForecast extends utils.Adapter {
      */
     async writeValues(summary, prices) {
         const units = unitsFrom(summary);
-        for (const [id, value] of Object.entries(extractValues(summary, prices))) {
+        for (const [id, value] of Object.entries(extractValues(summary, prices, this.settings.retail))) {
             const unit = resolveUnit(STATES[id].unit, units);
             if (unit !== this.writtenUnits[id]) {
                 await this.extendObjectAsync(id, { common: { unit } });

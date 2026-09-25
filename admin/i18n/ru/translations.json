@@ -9,5 +9,18 @@
     "15 to 120 minutes": "От 15 до 120 минут",
     "API key (optional)": "API-ключ (необязательно)",
     "Only needed for more than 48 h; leave empty for public access": "Нужен только для горизонта более 48 ч; оставьте пустым для открытого доступа",
-    "Setup guide and API access": "Инструкция и доступ к API"
+    "Setup guide and API access": "Инструкция и доступ к API",
+    "Household price": "Цена для домохозяйства",
+    "Prices show": "Цены показывают",
+    "Wholesale price, the API's household price estimate, or your own tariff": "Биржевая цена, оценка цены для домохозяйства от API или ваш собственный тариф",
+    "Wholesale price (exchange, without fees and taxes)": "Биржевая цена (без сборов и налогов)",
+    "Household price estimate (DE, AT, NL, DK, NO)": "Оценка цены для домохозяйства (DE, AT, NL, DK, NO)",
+    "Own tariff: exchange price × factor + surcharge": "Собственный тариф: биржевая цена × коэффициент + надбавка",
+    "Postal code": "Почтовый индекс",
+    "Germany: required, finds your grid operator. Netherlands: optional (1234 AB).": "Германия: обязательно, определяет сетевого оператора. Нидерланды: необязательно (1234 AB).",
+    "The estimate adds supplier markup, grid fee, levies and VAT per kWh. Fixed monthly charges are not included. The cheapest window stays the same, only the amounts change.": "Оценка добавляет наценку поставщика, сетевой тариф, сборы и НДС за кВт·ч. Ежемесячные фиксированные платежи не учитываются. Самое дешёвое окно не меняется, меняются только суммы.",
+    "Factor": "Коэффициент",
+    "Multiplies the exchange price, e.g. 1.19 for 19 % VAT": "Умножает биржевую цену, например 1,19 для НДС 19 %",
+    "Surcharge per kWh, including VAT": "Надбавка за кВт·ч, включая НДС",
+    "In the market's currency per kWh, e.g. 0.20 for 20 ct/kWh of grid fee, levies and supplier margin": "В валюте рынка за кВт·ч, например 0,20 для 20 ct/кВт·ч сетевого тарифа, сборов и маржи поставщика"
 }

@@ -9,5 +9,18 @@
     "15 to 120 minutes": "15 to 120 minutes",
     "API key (optional)": "API key (optional)",
     "Only needed for more than 48 h; leave empty for public access": "Only needed for more than 48 h; leave empty for public access",
-    "Setup guide and API access": "Setup guide and API access"
+    "Setup guide and API access": "Setup guide and API access",
+    "Household price": "Household price",
+    "Prices show": "Prices show",
+    "Wholesale price, the API's household price estimate, or your own tariff": "Wholesale price, the API's household price estimate, or your own tariff",
+    "Wholesale price (exchange, without fees and taxes)": "Wholesale price (exchange, without fees and taxes)",
+    "Household price estimate (DE, AT, NL, DK, NO)": "Household price estimate (DE, AT, NL, DK, NO)",
+    "Own tariff: exchange price × factor + surcharge": "Own tariff: exchange price × factor + surcharge",
+    "Postal code": "Postal code",
+    "Germany: required, finds your grid operator. Netherlands: optional (1234 AB).": "Germany: required, finds your grid operator. Netherlands: optional (1234 AB).",
+    "The estimate adds supplier markup, grid fee, levies and VAT per kWh. Fixed monthly charges are not included. The cheapest window stays the same, only the amounts change.": "The estimate adds supplier markup, grid fee, levies and VAT per kWh. Fixed monthly charges are not included. The cheapest window stays the same, only the amounts change.",
+    "Factor": "Factor",
+    "Multiplies the exchange price, e.g. 1.19 for 19 % VAT": "Multiplies the exchange price, e.g. 1.19 for 19 % VAT",
+    "Surcharge per kWh, including VAT": "Surcharge per kWh, including VAT",
+    "In the market's currency per kWh, e.g. 0.20 for 20 ct/kWh of grid fee, levies and supplier margin": "In the market's currency per kWh, e.g. 0.20 for 20 ct/kWh of grid fee, levies and supplier margin"
 }

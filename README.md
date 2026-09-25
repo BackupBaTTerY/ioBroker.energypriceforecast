@@ -32,8 +32,8 @@ AT, BE, BG, CH, CZ, DE, DK1, DK2, ES, FI, FR, GR, the seven Italian zones (NORD,
 CNOR, CSUD, SUD, CALA, SICI, SARD), NL, NO1–NO5, PL, PT, RO, SE1–SE4, SK.
 
 Prices are in the market's currency per kWh as the API reports it (EUR, DKK,
-NOK, SEK, ...). They are wholesale prices: grid fees, taxes and your supplier's
-margin are not included.
+NOK, SEK, ...). By default they are wholesale prices; see
+[Household price](#household-price) for what you actually pay.
 
 ## Configuration
 
@@ -43,7 +43,32 @@ margin are not included.
 | Forecast horizon | 24, 48, 72 or 120 hours. Public access serves up to 48 h. |
 | Window length | Hours the cheapest and greenest window should cover, 1–24. |
 | Update interval | 15–120 minutes, default 30. Prices change at most every 15 minutes. |
+| Prices show | Wholesale price, household price estimate, or own tariff, see below. |
+| Postal code | For the estimate in Germany (required) and the Netherlands (optional). |
+| Factor, surcharge | For the own tariff. |
 | API key | Optional. Only needed for a horizon beyond 48 h. Stored encrypted. |
+
+## Household price
+
+The exchange price is only part of the bill. Three settings decide what the
+price states show:
+
+| Setting | What the price states contain | Markets |
+|---|---|---|
+| Wholesale price | Day-ahead price and its forecast, without any fees or taxes | all |
+| Household price estimate | Wholesale price + supplier markup + grid fee + levies, then VAT. In Germany the grid fee comes from the grid operator found by your postal code. | DE, AT, NL, DK1, DK2, NO1–NO5 |
+| Own tariff | Wholesale price × factor + surcharge, with your own numbers | all |
+
+For the own tariff, take your contract: the factor is usually 1 + VAT (1.19 in
+Germany), the surcharge everything your supplier charges per kWh on top of the
+exchange price, including VAT - grid fee, levies and margin. Example for a
+German dynamic tariff with 20 ct/kWh on top: factor `1.19`, surcharge `0.20`.
+
+Either way the cheapest window stays the same hours, because every hour gets
+the same markup; only the amounts change. Fixed monthly charges are never
+included, and the forecast-quality states always stay on the wholesale basis.
+A setting that cannot work (e.g. the German estimate without a postal code)
+falls back to the wholesale price and says so in the log.
 
 ## States
 
@@ -66,6 +91,9 @@ margin are not included.
 | `quality.windowWithinOneHourDays` | Days on which it was at most one hour off |
 | `quality.windowMeanExtraCost` | What following the forecast window cost on average compared with the true cheapest one |
 | `quality.hourlyMeanAbsError`, `quality.hourlyCorrelation` | Hourly accuracy over 30 days |
+| `retail.basis` | `base`, `estimate` or `formula` - what the price states contain |
+| `retail.gridArea`, `retail.gridFee`, `retail.supplierMarkup`, `retail.leviesAndTaxes`, `retail.vatPercent` | What the estimate is built from (ct/kWh, øre/kWh in DK and NO) |
+| `retail.factor`, `retail.surcharge` | Your own tariff, if that is the basis |
 | `info.connection` | Last update succeeded |
 | `info.apiKeyState` | `missing` for public access, `valid` with a key, otherwise why the key was refused |
 
@@ -92,6 +120,8 @@ on({ id: 'energypriceforecast.0.price.bestWindow.active', val: true }, () => {
 
 - Initial release: price and CO2 forecast up to 120 h for 33 European markets,
   cheapest and greenest window, 15-minute price series
+- Household price: the API's estimate for DE (by postal code), AT, NL, DK and NO,
+  or your own tariff in every market
 
 ## License
 

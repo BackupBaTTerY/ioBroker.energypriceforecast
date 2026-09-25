@@ -9,5 +9,18 @@
     "15 to 120 minutes": "Od 15 do 120 minut",
     "API key (optional)": "Klucz API (opcjonalnie)",
     "Only needed for more than 48 h; leave empty for public access": "Potrzebny tylko powyżej 48 h; zostaw puste dla dostępu publicznego",
-    "Setup guide and API access": "Instrukcja i dostęp do API"
+    "Setup guide and API access": "Instrukcja i dostęp do API",
+    "Household price": "Cena dla gospodarstw domowych",
+    "Prices show": "Ceny pokazują",
+    "Wholesale price, the API's household price estimate, or your own tariff": "Cenę hurtową, szacunek ceny dla gospodarstw domowych z API lub własną taryfę",
+    "Wholesale price (exchange, without fees and taxes)": "Cena hurtowa (giełda, bez opłat i podatków)",
+    "Household price estimate (DE, AT, NL, DK, NO)": "Szacunek ceny dla gospodarstw domowych (DE, AT, NL, DK, NO)",
+    "Own tariff: exchange price × factor + surcharge": "Własna taryfa: cena giełdowa × współczynnik + dopłata",
+    "Postal code": "Kod pocztowy",
+    "Germany: required, finds your grid operator. Netherlands: optional (1234 AB).": "Niemcy: wymagany, wskazuje operatora sieci. Holandia: opcjonalny (1234 AB).",
+    "The estimate adds supplier markup, grid fee, levies and VAT per kWh. Fixed monthly charges are not included. The cheapest window stays the same, only the amounts change.": "Szacunek dodaje marżę sprzedawcy, opłatę sieciową, opłaty i VAT za kWh. Miesięczne opłaty stałe nie są uwzględnione. Najtańsze okno pozostaje takie samo, zmieniają się tylko kwoty.",
+    "Factor": "Współczynnik",
+    "Multiplies the exchange price, e.g. 1.19 for 19 % VAT": "Mnoży cenę giełdową, np. 1,23 dla 23 % VAT",
+    "Surcharge per kWh, including VAT": "Dopłata za kWh, z VAT",
+    "In the market's currency per kWh, e.g. 0.20 for 20 ct/kWh of grid fee, levies and supplier margin": "W walucie rynku za kWh, np. 0,20 dla 20 ct/kWh opłaty sieciowej, opłat i marży sprzedawcy"
 }

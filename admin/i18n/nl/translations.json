@@ -9,5 +9,18 @@
     "15 to 120 minutes": "15 tot 120 minuten",
     "API key (optional)": "API-sleutel (optioneel)",
     "Only needed for more than 48 h; leave empty for public access": "Alleen nodig voor meer dan 48 u; laat leeg voor publieke toegang",
-    "Setup guide and API access": "Handleiding en API-toegang"
+    "Setup guide and API access": "Handleiding en API-toegang",
+    "Household price": "Consumentenprijs",
+    "Prices show": "Prijzen tonen",
+    "Wholesale price, the API's household price estimate, or your own tariff": "Groothandelsprijs, de schatting van de consumentenprijs door de API of je eigen tarief",
+    "Wholesale price (exchange, without fees and taxes)": "Groothandelsprijs (beurs, zonder heffingen en belastingen)",
+    "Household price estimate (DE, AT, NL, DK, NO)": "Schatting consumentenprijs (DE, AT, NL, DK, NO)",
+    "Own tariff: exchange price × factor + surcharge": "Eigen tarief: beursprijs × factor + opslag",
+    "Postal code": "Postcode",
+    "Germany: required, finds your grid operator. Netherlands: optional (1234 AB).": "Duitsland: verplicht, bepaalt je netbeheerder. Nederland: optioneel (1234 AB).",
+    "The estimate adds supplier markup, grid fee, levies and VAT per kWh. Fixed monthly charges are not included. The cheapest window stays the same, only the amounts change.": "De schatting telt leveranciersopslag, netkosten, heffingen en btw per kWh op. Vaste maandelijkse kosten zijn niet inbegrepen. Het goedkoopste venster blijft gelijk, alleen de bedragen veranderen.",
+    "Factor": "Factor",
+    "Multiplies the exchange price, e.g. 1.19 for 19 % VAT": "Vermenigvuldigt de beursprijs, bijv. 1,21 voor 21 % btw",
+    "Surcharge per kWh, including VAT": "Opslag per kWh, inclusief btw",
+    "In the market's currency per kWh, e.g. 0.20 for 20 ct/kWh of grid fee, levies and supplier margin": "In de valuta van de markt per kWh, bijv. 0,20 voor 20 ct/kWh aan netkosten, heffingen en leveranciersmarge"
 }

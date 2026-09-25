@@ -9,5 +9,18 @@
     "15 to 120 minutes": "15 到 120 分钟",
     "API key (optional)": "API 密钥（可选）",
     "Only needed for more than 48 h; leave empty for public access": "仅在超过 48 小时时需要；留空即使用公共访问",
-    "Setup guide and API access": "设置指南与 API 访问"
+    "Setup guide and API access": "设置指南与 API 访问",
+    "Household price": "家庭电价",
+    "Prices show": "价格显示",
+    "Wholesale price, the API's household price estimate, or your own tariff": "批发价格、API 估算的家庭电价或您自己的电价方案",
+    "Wholesale price (exchange, without fees and taxes)": "批发价格（交易所价格，不含费用和税）",
+    "Household price estimate (DE, AT, NL, DK, NO)": "家庭电价估算（DE、AT、NL、DK、NO）",
+    "Own tariff: exchange price × factor + surcharge": "自定义电价：交易所价格 × 系数 + 附加费",
+    "Postal code": "邮政编码",
+    "Germany: required, finds your grid operator. Netherlands: optional (1234 AB).": "德国：必填，用于确定电网运营商。荷兰：可选（1234 AB）。",
+    "The estimate adds supplier markup, grid fee, levies and VAT per kWh. Fixed monthly charges are not included. The cheapest window stays the same, only the amounts change.": "估算会按每千瓦时加上供应商加价、电网费、附加费和增值税。不含每月固定费用。最便宜时段不变，只是金额变化。",
+    "Factor": "系数",
+    "Multiplies the exchange price, e.g. 1.19 for 19 % VAT": "乘以交易所价格，例如 19% 增值税时为 1.19",
+    "Surcharge per kWh, including VAT": "每千瓦时附加费（含增值税）",
+    "In the market's currency per kWh, e.g. 0.20 for 20 ct/kWh of grid fee, levies and supplier margin": "以市场货币计价的每千瓦时金额，例如 0.20 表示 20 ct/kWh 的电网费、附加费和供应商利润"
 }

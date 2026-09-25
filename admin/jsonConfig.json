@@ -202,6 +202,84 @@
             "xl": 4,
             "newLine": true
         },
+        "retailHeader": {
+            "type": "header",
+            "text": "Household price",
+            "size": 4,
+            "newLine": true
+        },
+        "priceBasis": {
+            "type": "select",
+            "label": "Prices show",
+            "help": "Wholesale price, the API's household price estimate, or your own tariff",
+            "options": [
+                {
+                    "label": "Wholesale price (exchange, without fees and taxes)",
+                    "value": "base"
+                },
+                {
+                    "label": "Household price estimate (DE, AT, NL, DK, NO)",
+                    "value": "estimate"
+                },
+                {
+                    "label": "Own tariff: exchange price × factor + surcharge",
+                    "value": "formula"
+                }
+            ],
+            "xs": 12,
+            "sm": 12,
+            "md": 6,
+            "lg": 4,
+            "xl": 4,
+            "newLine": true
+        },
+        "postalCode": {
+            "type": "text",
+            "label": "Postal code",
+            "help": "Germany: required, finds your grid operator. Netherlands: optional (1234 AB).",
+            "hidden": "data.priceBasis !== 'estimate' || (data.market !== 'DE' && data.market !== 'NL')",
+            "xs": 12,
+            "sm": 12,
+            "md": 6,
+            "lg": 4,
+            "xl": 4
+        },
+        "estimateHint": {
+            "type": "staticText",
+            "text": "The estimate adds supplier markup, grid fee, levies and VAT per kWh. Fixed monthly charges are not included. The cheapest window stays the same, only the amounts change.",
+            "hidden": "data.priceBasis !== 'estimate'",
+            "xs": 12,
+            "newLine": true
+        },
+        "retailFactor": {
+            "type": "number",
+            "label": "Factor",
+            "help": "Multiplies the exchange price, e.g. 1.19 for 19 % VAT",
+            "min": 0.01,
+            "max": 10,
+            "step": 0.001,
+            "hidden": "data.priceBasis !== 'formula'",
+            "xs": 12,
+            "sm": 12,
+            "md": 6,
+            "lg": 4,
+            "xl": 4,
+            "newLine": true
+        },
+        "retailSurcharge": {
+            "type": "number",
+            "label": "Surcharge per kWh, including VAT",
+            "help": "In the market's currency per kWh, e.g. 0.20 for 20 ct/kWh of grid fee, levies and supplier margin",
+            "min": -100,
+            "max": 100,
+            "step": 0.0001,
+            "hidden": "data.priceBasis !== 'formula'",
+            "xs": 12,
+            "sm": 12,
+            "md": 6,
+            "lg": 4,
+            "xl": 4
+        },
         "apiKey": {
             "type": "password",
             "label": "API key (optional)",
