@@ -109,6 +109,13 @@ on({ id: 'energypriceforecast.0.price.bestWindow.active', val: true }, () => {
 });
 ```
 
+## Feedback
+
+The adapter is in testing. Feedback is collected in the
+[test thread in the ioBroker forum](https://forum.iobroker.net/topic/85440/energypriceforecasteu)
+(German); bugs are best reported as a
+[GitHub issue](https://github.com/BackupBaTTerY/ioBroker.energypriceforecast/issues).
+
 ## Changelog
 
 <!--
