@@ -4,17 +4,17 @@
         "version": "0.1.0",
         "news": {
             "0.1.0": {
-                "en": "Initial release: price and CO2 forecast up to 120 h for 33 European markets, cheapest and greenest window, 15-minute price series",
-                "de": "Erste Version: Preis- und CO2-Prognose bis 120 h für 33 europäische Märkte, günstigstes und grünstes Zeitfenster, Preisreihe in 15-Minuten-Slots",
-                "ru": "Первый выпуск: прогноз цены и CO2 до 120 ч для 33 европейских рынков, самое дешёвое и самое чистое окно, ценовой ряд с шагом 15 минут",
-                "pt": "Versão inicial: previsão de preço e CO2 até 120 h para 33 mercados europeus, janela mais barata e mais verde, série de preços em intervalos de 15 minutos",
-                "nl": "Eerste versie: prijs- en CO2-voorspelling tot 120 u voor 33 Europese markten, goedkoopste en groenste venster, prijsreeks in kwartierslots",
-                "fr": "Première version : prévision du prix et du CO2 jusqu'à 120 h pour 33 marchés européens, fenêtre la moins chère et la plus verte, série de prix au quart d'heure",
-                "it": "Prima versione: previsione di prezzo e CO2 fino a 120 h per 33 mercati europei, finestra più economica e più verde, serie di prezzi a intervalli di 15 minuti",
-                "es": "Primera versión: previsión de precio y CO2 hasta 120 h para 33 mercados europeos, ventana más barata y más limpia, serie de precios en tramos de 15 minutos",
-                "pl": "Pierwsza wersja: prognoza ceny i CO2 do 120 h dla 33 rynków europejskich, najtańsze i najczystsze okno, szereg cen w 15-minutowych slotach",
-                "uk": "Перший випуск: прогноз ціни та CO2 до 120 год для 33 європейських ринків, найдешевше та найчистіше вікно, ціновий ряд із кроком 15 хвилин",
-                "zh-cn": "首个版本：33 个欧洲市场最长 120 小时的电价与 CO2 预测，最便宜与最清洁时段，15 分钟粒度的价格序列"
+                "en": "Initial release: price and CO2 forecast up to 120 h for 33 European markets, cheapest and greenest window, 15-minute price series; household price as estimate (DE, AT, NL, DK, NO) or own tariff",
+                "de": "Erste Version: Preis- und CO2-Prognose bis 120 h für 33 europäische Märkte, günstigstes und grünstes Zeitfenster, Preisreihe in 15-Minuten-Slots; Endkundenpreis als Schätzung (DE, AT, NL, DK, NO) oder eigener Tarif",
+                "ru": "Первый выпуск: прогноз цены и CO2 до 120 ч для 33 европейских рынков, самое дешёвое и самое чистое окно, ценовой ряд с шагом 15 минут; цена для домохозяйства как оценка (DE, AT, NL, DK, NO) или собственный тариф",
+                "pt": "Versão inicial: previsão de preço e CO2 até 120 h para 33 mercados europeus, janela mais barata e mais verde, série de preços em intervalos de 15 minutos; preço doméstico como estimativa (DE, AT, NL, DK, NO) ou tarifa própria",
+                "nl": "Eerste versie: prijs- en CO2-voorspelling tot 120 u voor 33 Europese markten, goedkoopste en groenste venster, prijsreeks in kwartierslots; consumentenprijs als schatting (DE, AT, NL, DK, NO) of eigen tarief",
+                "fr": "Première version : prévision du prix et du CO2 jusqu'à 120 h pour 33 marchés européens, fenêtre la moins chère et la plus verte, série de prix au quart d'heure ; prix ménage estimé (DE, AT, NL, DK, NO) ou tarif personnel",
+                "it": "Prima versione: previsione di prezzo e CO2 fino a 120 h per 33 mercati europei, finestra più economica e più verde, serie di prezzi a intervalli di 15 minuti; prezzo per le famiglie come stima (DE, AT, NL, DK, NO) o tariffa propria",
+                "es": "Primera versión: previsión de precio y CO2 hasta 120 h para 33 mercados europeos, ventana más barata y más limpia, serie de precios en tramos de 15 minutos; precio para hogares como estimación (DE, AT, NL, DK, NO) o tarifa propia",
+                "pl": "Pierwsza wersja: prognoza ceny i CO2 do 120 h dla 33 rynków europejskich, najtańsze i najczystsze okno, szereg cen w 15-minutowych slotach; cena dla gospodarstw domowych jako szacunek (DE, AT, NL, DK, NO) lub własna taryfa",
+                "uk": "Перший випуск: прогноз ціни та CO2 до 120 год для 33 європейських ринків, найдешевше та найчистіше вікно, ціновий ряд із кроком 15 хвилин; ціна для домогосподарств як оцінка (DE, AT, NL, DK, NO) або власний тариф",
+                "zh-cn": "首个版本：33 个欧洲市场最长 120 小时的电价与 CO2 预测，最便宜与最清洁时段，15 分钟粒度的价格序列；家庭电价可用估算（DE、AT、NL、DK、NO）或自定义电价"
             }
         },
         "titleLang": {
@@ -43,8 +43,18 @@
             "uk": "Прогноз ціни електроенергії та CO2 до 120 год понад ринок на добу наперед, з найдешевшим і найчистішим вікном, для 33 європейських ринків",
             "zh-cn": "33 个欧洲市场的电价与 CO2 预测，超出日前市场最长 120 小时，并给出最便宜和最清洁的时段"
         },
-        "authors": ["BackupBaTTerY <StrompreisVorhersage@proton.me>"],
-        "keywords": ["electricity price", "strompreis", "forecast", "day-ahead", "co2", "energy", "dynamic tariff"],
+        "authors": [
+            "BackupBaTTerY <StrompreisVorhersage@proton.me>"
+        ],
+        "keywords": [
+            "electricity price",
+            "strompreis",
+            "forecast",
+            "day-ahead",
+            "co2",
+            "energy",
+            "dynamic tariff"
+        ],
         "licenseInformation": {
             "license": "MIT",
             "type": "limited",
@@ -72,18 +82,26 @@
         ],
         "globalDependencies": [
             {
-                "admin": ">=7.4.10"
+                "admin": ">=7.6.17"
             }
         ]
     },
-    "encryptedNative": ["apiKey"],
-    "protectedNative": ["apiKey"],
+    "encryptedNative": [
+        "apiKey"
+    ],
+    "protectedNative": [
+        "apiKey"
+    ],
     "native": {
         "market": "DE",
         "horizonHours": 48,
         "windowHours": 4,
         "intervalMinutes": 30,
-        "apiKey": ""
+        "apiKey": "",
+        "priceBasis": "base",
+        "postalCode": "",
+        "retailFactor": 1,
+        "retailSurcharge": 0
     },
     "objects": [],
     "instanceObjects": [
