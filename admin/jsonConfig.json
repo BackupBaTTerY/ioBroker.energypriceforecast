@@ -249,7 +249,11 @@
             "text": "The estimate adds supplier markup, grid fee, levies and VAT per kWh. Fixed monthly charges are not included. The cheapest window stays the same, only the amounts change.",
             "hidden": "data.priceBasis !== 'estimate'",
             "xs": 12,
-            "newLine": true
+            "newLine": true,
+            "sm": 12,
+            "md": 12,
+            "lg": 12,
+            "xl": 12
         },
         "retailFactor": {
             "type": "number",
