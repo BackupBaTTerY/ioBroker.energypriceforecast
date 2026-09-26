@@ -1,8 +1,21 @@
 {
     "common": {
         "name": "energypriceforecast",
-        "version": "0.1.0",
+        "version": "0.1.1",
         "news": {
+            "0.1.1": {
+                "en": "First release published from GitHub Actions with npm provenance; translations in the short i18n format; updated test tooling",
+                "de": "Erste Veröffentlichung über GitHub Actions mit npm-Herkunftsnachweis; Übersetzungen im kurzen i18n-Format; aktualisierte Testwerkzeuge",
+                "ru": "Первый выпуск, опубликованный через GitHub Actions с подтверждением происхождения npm; переводы в коротком формате i18n; обновлены средства тестирования",
+                "pt": "Primeira versão publicada via GitHub Actions com proveniência npm; traduções no formato i18n curto; ferramentas de teste atualizadas",
+                "nl": "Eerste release gepubliceerd via GitHub Actions met npm-herkomstbewijs; vertalingen in het korte i18n-formaat; testtools bijgewerkt",
+                "fr": "Première version publiée via GitHub Actions avec provenance npm ; traductions au format i18n court ; outils de test mis à jour",
+                "it": "Prima versione pubblicata tramite GitHub Actions con provenienza npm; traduzioni nel formato i18n breve; strumenti di test aggiornati",
+                "es": "Primera versión publicada mediante GitHub Actions con procedencia npm; traducciones en el formato i18n corto; herramientas de prueba actualizadas",
+                "pl": "Pierwsze wydanie opublikowane przez GitHub Actions z potwierdzeniem pochodzenia npm; tłumaczenia w krótkim formacie i18n; zaktualizowane narzędzia testowe",
+                "uk": "Перший випуск, опублікований через GitHub Actions із підтвердженням походження npm; переклади в короткому форматі i18n; оновлено засоби тестування",
+                "zh-cn": "首个通过 GitHub Actions 发布并带有 npm 来源证明的版本；翻译改为简短 i18n 格式；更新测试工具"
+            },
             "0.1.0": {
                 "en": "Initial release: price and CO2 forecast up to 120 h for 33 European markets, cheapest and greenest window, 15-minute price series; household price as estimate (DE, AT, NL, DK, NO) or own tariff",
                 "de": "Erste Version: Preis- und CO2-Prognose bis 120 h für 33 europäische Märkte, günstigstes und grünstes Zeitfenster, Preisreihe in 15-Minuten-Slots; Endkundenpreis als Schätzung (DE, AT, NL, DK, NO) oder eigener Tarif",

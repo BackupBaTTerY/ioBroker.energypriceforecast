@@ -1,6 +1,6 @@
 {
     "name": "iobroker.energypriceforecast",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "Electricity price and CO2 forecast up to 120 h beyond day-ahead for 33 European markets",
     "author": {
         "name": "BackupBaTTerY",
@@ -54,6 +54,7 @@
         "@alcalzone/release-script-plugin-manual-review": "^5.2.0",
         "@iobroker/adapter-dev": "^1.5.0",
         "@iobroker/eslint-config": "^2.3.4",
-        "@iobroker/testing": "^6.2.1"
+        "@iobroker/testing": "^6.2.2",
+        "@types/node": "^22.20.4"
     }
 }
