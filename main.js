@@ -2,7 +2,7 @@
 
 const utils = require('@iobroker/adapter-core');
 const { ApiError, REJECTED_API_KEY_STATES, fetchSummary, fetchPrices } = require('./lib/api');
-const { CHANNELS, STATES, extractValues, resolveUnit, unitsFrom } = require('./lib/states');
+const { CHANNELS, STATES, appliesTo, extractValues, resolveUnit, unitsFrom } = require('./lib/states');
 const { resolveRetailSettings, applyFormula } = require('./lib/retail');
 const { version } = require('./package.json');
 
@@ -83,6 +83,12 @@ class EnergyPriceForecast extends utils.Adapter {
             await this.extendObjectAsync(id, { type: 'channel', common: { name }, native: {} });
         }
         for (const [id, state] of Object.entries(STATES)) {
+            if (!appliesTo(id, this.settings.retail.basis)) {
+                // Left over from another price basis; an empty state would
+                // only suggest a value that is never coming.
+                await this.delObjectAsync(id).catch(() => undefined);
+                continue;
+            }
             await this.extendObjectAsync(id, {
                 type: 'state',
                 common: {

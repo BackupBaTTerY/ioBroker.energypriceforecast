@@ -1,6 +1,6 @@
 {
     "name": "iobroker.energypriceforecast",
-    "version": "0.1.1",
+    "version": "0.1.2",
     "description": "Electricity price and CO2 forecast up to 120 h beyond day-ahead for 33 European markets",
     "author": {
         "name": "BackupBaTTerY",

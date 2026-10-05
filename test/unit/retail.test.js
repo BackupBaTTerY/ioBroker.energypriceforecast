@@ -90,7 +90,7 @@ describe('own tariff formula', () => {
         expect(values['retail.basis']).to.equal('formula');
         expect(values['retail.factor']).to.equal(factor);
         expect(values['retail.surcharge']).to.equal(surcharge);
-        expect(values['retail.gridFee']).to.equal(null);
+        expect(values).to.not.have.property('retail.gridFee');
     });
 });
 
@@ -102,7 +102,7 @@ describe('API household price estimate', () => {
         expect(values['retail.gridArea']).to.equal(retailSummary.assumptions.netzgebiet_label);
         expect(values['retail.gridFee']).to.equal(retailSummary.assumptions.grid_fee_ct_kwh);
         expect(values['retail.vatPercent']).to.equal(retailSummary.assumptions.vat_percent);
-        expect(values['retail.factor']).to.equal(null);
+        expect(values).to.not.have.property('retail.factor');
     });
 
     it('gives the components their own unit, ct/kWh, next to the price in EUR/kWh', () => {
@@ -111,10 +111,10 @@ describe('API household price estimate', () => {
         expect(resolveUnit(STATES['price.current'].unit, units)).to.equal('EUR/kWh');
     });
 
-    it('leaves the components empty on the wholesale basis', () => {
+    it('has no retail components on the wholesale basis', () => {
         const base = extractValues(summary, prices);
         expect(base['retail.basis']).to.equal('base');
-        expect(base['retail.gridArea']).to.equal(null);
-        expect(base['retail.gridFee']).to.equal(null);
+        expect(base).to.not.have.property('retail.gridArea');
+        expect(base).to.not.have.property('retail.factor');
     });
 });

@@ -79,7 +79,7 @@ falls back to the wholesale price and says so in the log.
 | `price.bestWindow.start` / `.end` | Cheapest window in the horizon (ISO 8601, UTC) |
 | `price.bestWindow.average` | Average price in that window |
 | `price.bestWindow.active` | `true` while the cheapest window is running |
-| `price.bestWindow.remainingMinutes` | Minutes left while it runs, otherwise `null` |
+| `price.bestWindow.remainingMinutes` | Minutes left while it runs, otherwise `0` |
 | `price.bestWindow.status` | `upcoming`, `active` or `passed` |
 | `co2.current`, `co2.bestWindow.*` | The same for CO2 intensity (gCO2/kWh) |
 | `combined.scoreNow` | Share of the coming 24 h that are worse on price and CO2 than now; 100 = now is the best time |
@@ -92,8 +92,8 @@ falls back to the wholesale price and says so in the log.
 | `quality.windowMeanExtraCost` | What following the forecast window cost on average compared with the true cheapest one |
 | `quality.hourlyMeanAbsError`, `quality.hourlyCorrelation` | Hourly accuracy over 30 days |
 | `retail.basis` | `base`, `estimate` or `formula` - what the price states contain |
-| `retail.gridArea`, `retail.gridFee`, `retail.supplierMarkup`, `retail.leviesAndTaxes`, `retail.vatPercent` | What the estimate is built from (ct/kWh, øre/kWh in DK and NO) |
-| `retail.factor`, `retail.surcharge` | Your own tariff, if that is the basis |
+| `retail.gridArea`, `retail.gridFee`, `retail.supplierMarkup`, `retail.leviesAndTaxes`, `retail.vatPercent` | What the estimate is built from (ct/kWh, øre/kWh in DK and NO); only with the estimate |
+| `retail.factor`, `retail.surcharge` | Your own tariff; only with the own tariff |
 | `info.connection` | Last update succeeded |
 | `info.apiKeyState` | `missing` for public access, `valid` with a key, otherwise why the key was refused |
 
@@ -122,6 +122,12 @@ The adapter is in testing. Feedback is collected in the
     Placeholder for the next version (at the beginning of the line):
     ### **WORK IN PROGRESS**
 -->
+
+### 0.1.2 (2026-10-05)
+
+- State and channel names in all eleven admin languages
+- The retail component states only exist for the price basis in use; switching the basis removes the others
+- `remainingMinutes` is 0 outside a window and `active` is `false` when there is no window, instead of empty values
 
 ### 0.1.1 (2026-09-26)
 

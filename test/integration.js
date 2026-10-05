@@ -1,8 +1,40 @@
 'use strict';
 
+const fs = require('fs');
 const path = require('path');
 const { expect } = require('chai');
 const { tests } = require('@iobroker/testing');
+
+/**
+ * Writes the instance's objects with their state values in the format of the
+ * admin's object export, which the ioBroker repository review asks for as
+ * "energypriceforecast.0.json". Set OBJECT_DUMP_FILE to produce it.
+ *
+ * @param {any} harness the integration test harness
+ * @param {string} file where to write the dump
+ */
+async function writeObjectDump(harness, file) {
+    const prefix = 'energypriceforecast.0';
+    const list = await harness.objects.getObjectListAsync({ startkey: prefix, endkey: `${prefix}.香` });
+    const dump = {};
+    for (const { id, value } of list.rows) {
+        if (id !== prefix && !id.startsWith(`${prefix}.`)) {
+            continue;
+        }
+        const entry = { ...value };
+        if (value.type === 'state') {
+            const state = await harness.states.getStateAsync(id);
+            if (state) {
+                Object.assign(entry, { val: state.val, ack: state.ack, ts: state.ts, q: state.q, lc: state.lc });
+                if (state.from) {
+                    entry.from = state.from;
+                }
+            }
+        }
+        dump[id] = entry;
+    }
+    fs.writeFileSync(file, `${JSON.stringify(dump, null, 2)}\n`);
+}
 
 // Starts the adapter in a throwaway js-controller and lets it poll the real
 // API once, so this needs network access.
@@ -60,6 +92,10 @@ tests.integration(path.join(__dirname, '..'), {
                 // exchange price, so it cannot be negative or tiny.
                 const price = await harness.states.getStateAsync('energypriceforecast.0.price.current');
                 expect(price && price.val).to.be.above(0.1);
+
+                if (process.env.OBJECT_DUMP_FILE) {
+                    await writeObjectDump(harness, process.env.OBJECT_DUMP_FILE);
+                }
             });
         });
     },

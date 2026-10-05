@@ -1,8 +1,21 @@
 {
     "common": {
         "name": "energypriceforecast",
-        "version": "0.1.1",
+        "version": "0.1.2",
         "news": {
+            "0.1.2": {
+                "en": "State names in all eleven admin languages; retail states only exist for the price basis in use; no empty number states outside a window",
+                "de": "Datenpunktnamen in allen elf Admin-Sprachen; Endpreis-Datenpunkte gibt es nur für die gewählte Preisgrundlage; keine leeren Zahlenwerte außerhalb eines Fensters",
+                "ru": "Названия состояний на всех одиннадцати языках админки; состояния цены для домохозяйства есть только для выбранной основы; нет пустых числовых значений вне окна",
+                "pt": "Nomes dos estados nas onze línguas do admin; estados de preço doméstico só existem para a base de preço em uso; sem valores numéricos vazios fora de uma janela",
+                "nl": "Namen van datapunten in alle elf admin-talen; consumentenprijs-datapunten bestaan alleen voor de gekozen prijsbasis; geen lege getalwaarden buiten een venster",
+                "fr": "Noms des états dans les onze langues de l'admin ; les états de prix ménage n'existent que pour la base de prix choisie ; plus de valeurs numériques vides hors fenêtre",
+                "it": "Nomi degli stati in tutte le undici lingue dell'admin; gli stati del prezzo per le famiglie esistono solo per la base di prezzo scelta; nessun valore numerico vuoto fuori da una finestra",
+                "es": "Nombres de los estados en los once idiomas del admin; los estados de precio para hogares solo existen para la base de precio elegida; sin valores numéricos vacíos fuera de una ventana",
+                "pl": "Nazwy stanów we wszystkich jedenastu językach admina; stany ceny dla gospodarstw istnieją tylko dla wybranej podstawy ceny; brak pustych wartości liczbowych poza oknem",
+                "uk": "Назви станів усіма одинадцятьма мовами адмінки; стани ціни для домогосподарств існують лише для вибраної основи; немає порожніх числових значень поза вікном",
+                "zh-cn": "状态名称支持全部十一种管理界面语言；家庭电价状态只在所选价格依据下存在；时段之外不再有空数值"
+            },
             "0.1.1": {
                 "en": "First release published from GitHub Actions with npm provenance; translations in the short i18n format; updated test tooling",
                 "de": "Erste Veröffentlichung über GitHub Actions mit npm-Herkunftsnachweis; Übersetzungen im kurzen i18n-Format; aktualisierte Testwerkzeuge",
@@ -124,7 +137,16 @@
             "common": {
                 "name": {
                     "en": "Information",
-                    "de": "Informationen"
+                    "de": "Informationen",
+                    "ru": "Информация",
+                    "pt": "Informação",
+                    "nl": "Informatie",
+                    "fr": "Informations",
+                    "it": "Informazioni",
+                    "es": "Información",
+                    "pl": "Informacje",
+                    "uk": "Інформація",
+                    "zh-cn": "信息"
                 }
             },
             "native": {}
@@ -136,7 +158,16 @@
                 "role": "indicator.connected",
                 "name": {
                     "en": "Last update succeeded",
-                    "de": "Letzte Aktualisierung erfolgreich"
+                    "de": "Letzte Aktualisierung erfolgreich",
+                    "ru": "Последнее обновление успешно",
+                    "pt": "Última atualização bem-sucedida",
+                    "nl": "Laatste update geslaagd",
+                    "fr": "Dernière mise à jour réussie",
+                    "it": "Ultimo aggiornamento riuscito",
+                    "es": "Última actualización correcta",
+                    "pl": "Ostatnia aktualizacja udana",
+                    "uk": "Останнє оновлення успішне",
+                    "zh-cn": "上次更新成功"
                 },
                 "type": "boolean",
                 "read": true,
