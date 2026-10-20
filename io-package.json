@@ -57,17 +57,17 @@
             "zh-cn": "欧洲电价预测"
         },
         "desc": {
-            "en": "Electricity price and CO2 forecast up to 120 h beyond day-ahead, with the cheapest and greenest time window, for 33 European markets",
-            "de": "Strompreis- und CO2-Prognose bis 120 h über Day-Ahead hinaus, mit günstigstem und grünstem Zeitfenster, für 33 europäische Märkte",
-            "ru": "Прогноз цены электроэнергии и CO2 до 120 ч сверх рынка на сутки вперёд, с самым дешёвым и самым чистым окном, для 33 европейских рынков",
-            "pt": "Previsão de preço da eletricidade e CO2 até 120 h além do mercado diário, com a janela mais barata e mais verde, para 33 mercados europeus",
-            "nl": "Stroomprijs- en CO2-voorspelling tot 120 u na de day-ahead, met het goedkoopste en groenste tijdvenster, voor 33 Europese markten",
-            "fr": "Prévision du prix de l'électricité et du CO2 jusqu'à 120 h au-delà du day-ahead, avec la fenêtre la moins chère et la plus verte, pour 33 marchés européens",
-            "it": "Previsione del prezzo dell'elettricità e della CO2 fino a 120 h oltre il day-ahead, con la finestra più economica e più verde, per 33 mercati europei",
-            "es": "Previsión del precio de la electricidad y del CO2 hasta 120 h más allá del mercado diario, con la ventana más barata y más limpia, para 33 mercados europeos",
-            "pl": "Prognoza ceny energii i CO2 do 120 h poza rynkiem dnia następnego, z najtańszym i najczystszym oknem czasowym, dla 33 rynków europejskich",
-            "uk": "Прогноз ціни електроенергії та CO2 до 120 год понад ринок на добу наперед, з найдешевшим і найчистішим вікном, для 33 європейських ринків",
-            "zh-cn": "33 个欧洲市场的电价与 CO2 预测，超出日前市场最长 120 小时，并给出最便宜和最清洁的时段"
+            "en": "Electricity price and CO2 forecast up to 120 h beyond day-ahead, with the cheapest and greenest time window, for 34 European markets",
+            "de": "Strompreis- und CO2-Prognose bis 120 h über Day-Ahead hinaus, mit günstigstem und grünstem Zeitfenster, für 34 europäische Märkte",
+            "ru": "Прогноз цены электроэнергии и CO2 до 120 ч сверх рынка на сутки вперёд, с самым дешёвым и самым чистым окном, для 34 европейских рынков",
+            "pt": "Previsão de preço da eletricidade e CO2 até 120 h além do mercado diário, com a janela mais barata e mais verde, para 34 mercados europeus",
+            "nl": "Stroomprijs- en CO2-voorspelling tot 120 u na de day-ahead, met het goedkoopste en groenste tijdvenster, voor 34 Europese markten",
+            "fr": "Prévision du prix de l'électricité et du CO2 jusqu'à 120 h au-delà du day-ahead, avec la fenêtre la moins chère et la plus verte, pour 34 marchés européens",
+            "it": "Previsione del prezzo dell'elettricità e della CO2 fino a 120 h oltre il day-ahead, con la finestra più economica e più verde, per 34 mercati europei",
+            "es": "Previsión del precio de la electricidad y del CO2 hasta 120 h más allá del mercado diario, con la ventana más barata y más limpia, para 34 mercados europeos",
+            "pl": "Prognoza ceny energii i CO2 do 120 h poza rynkiem dnia następnego, z najtańszym i najczystszym oknem czasowym, dla 34 rynków europejskich",
+            "uk": "Прогноз ціни електроенергії та CO2 до 120 год понад ринок на добу наперед, з найдешевшим і найчистішим вікном, для 34 європейських ринків",
+            "zh-cn": "34 个欧洲市场的电价与 CO2 预测，超出日前市场最长 120 小时，并给出最便宜和最清洁的时段"
         },
         "authors": [
             "BackupBaTTerY <StrompreisVorhersage@proton.me>"

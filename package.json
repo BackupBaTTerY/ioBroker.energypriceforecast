@@ -1,7 +1,7 @@
 {
     "name": "iobroker.energypriceforecast",
     "version": "0.1.2",
-    "description": "Electricity price and CO2 forecast up to 120 h beyond day-ahead for 33 European markets",
+    "description": "Electricity price and CO2 forecast up to 120 h beyond day-ahead for 34 European markets",
     "author": {
         "name": "BackupBaTTerY",
         "email": "StrompreisVorhersage@proton.me"
