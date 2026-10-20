@@ -7,7 +7,7 @@
 
 ## Energy Price Forecast EU adapter for ioBroker
 
-Electricity price and CO2 forecast for 33 European bidding zones from
+Electricity price and CO2 forecast for 34 European bidding zones from
 [energypriceforecast.eu](https://energypriceforecast.eu/).
 
 Day-ahead prices are only published for the next day. This adapter continues
@@ -28,12 +28,25 @@ All calculation happens on the server. The adapter polls, maps and writes states
 
 ### Markets
 
-AT, BE, BG, CH, CZ, DE, DK1, DK2, ES, FI, FR, GR, the seven Italian zones (NORD,
+AT, BE, BG, CH, CZ, DE, DK1, DK2, ES, FI, FR, GB, GR, the seven Italian zones (NORD,
 CNOR, CSUD, SUD, CALA, SICI, SARD), NL, NO1–NO5, PL, PT, RO, SE1–SE4, SK.
 
 Prices are in the market's currency per kWh as the API reports it (EUR, DKK,
-NOK, SEK, ...). By default they are wholesale prices; see
+NOK, SEK, GBP, ...). By default they are wholesale prices; see
 [Household price](#household-price) for what you actually pay.
+
+### Great Britain (GB, beta)
+
+Choose GB in the instance settings. Price states use `GBP/kWh`: 0.10 means
+10 p/kWh, not 0.10 p/kWh. GB is hourly wholesale data, not the exact half-hourly
+Agile tariff. Quarter-hour output repeats the hourly price and does not add
+measured half-hour data. There is no GB household-price estimate. Own-tariff
+formulas use surcharges in GBP/kWh. Quality remains unavailable until enough
+history has been collected; an empty quality state is not a zero error.
+
+Großbritannien ist noch Beta. Die Preiswerte sind Pfund/kWh, nicht Pence/kWh.
+Es handelt sich um stündliche Börsenpreise, nicht den exakten Agile-Tarif.
+Für einen eigenen Tarif gibst du den Aufschlag in GBP/kWh ein.
 
 ## Configuration
 
