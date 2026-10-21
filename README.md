@@ -44,10 +44,6 @@ measured half-hour data. There is no GB household-price estimate. Own-tariff
 formulas use surcharges in GBP/kWh. Quality remains unavailable until enough
 history has been collected; an empty quality state is not a zero error.
 
-Großbritannien ist noch Beta. Die Preiswerte sind Pfund/kWh, nicht Pence/kWh.
-Es handelt sich um stündliche Börsenpreise, nicht den exakten Agile-Tarif.
-Für einen eigenen Tarif gibst du den Aufschlag in GBP/kWh ein.
-
 ## Configuration
 
 | Setting | Meaning |
@@ -142,18 +138,7 @@ The adapter is in testing. Feedback is collected in the
 - The retail component states only exist for the price basis in use; switching the basis removes the others
 - `remainingMinutes` is 0 outside a window and `active` is `false` when there is no window, instead of empty values
 
-### 0.1.1 (2026-09-26)
-
-- Published from GitHub Actions with npm provenance (trusted publishing)
-- Admin translations moved to the short i18n format (`admin/i18n/<lang>.json`)
-- Updated test tooling
-
-### 0.1.0 (2026-09-25)
-
-- Initial release: price and CO2 forecast up to 120 h for 33 European markets,
-  cheapest and greenest window, 15-minute price series
-- Household price: the API's estimate for DE (by postal code), AT, NL, DK and NO,
-  or your own tariff in every market
+Older releases are documented in [CHANGELOG_OLD.md](CHANGELOG_OLD.md).
 
 ## License
 
