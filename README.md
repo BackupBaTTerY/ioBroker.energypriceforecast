@@ -132,6 +132,12 @@ The adapter is in testing. Feedback is collected in the
     ### **WORK IN PROGRESS**
 -->
 
+### 0.1.3 (2026-10-31)
+
+- Great Britain (GB, beta): hourly wholesale prices in GBP/kWh, own tariff with surcharges in GBP/kWh
+- README in English only
+- Updated test tooling (`@iobroker/testing` 6.3)
+
 ### 0.1.2 (2026-10-05)
 
 - State and channel names in all eleven admin languages

@@ -1,8 +1,21 @@
 {
     "common": {
         "name": "energypriceforecast",
-        "version": "0.1.2",
+        "version": "0.1.3",
         "news": {
+            "0.1.3": {
+                "en": "Great Britain (GB, beta) with prices in GBP/kWh; README in English only; updated test tooling",
+                "de": "Großbritannien (GB, Beta) mit Preisen in GBP/kWh; README nur noch auf Englisch; aktualisierte Testwerkzeuge",
+                "ru": "Великобритания (GB, бета) с ценами в GBP/kWh; README только на английском; обновлены средства тестирования",
+                "pt": "Grã-Bretanha (GB, beta) com preços em GBP/kWh; README apenas em inglês; ferramentas de teste atualizadas",
+                "nl": "Groot-Brittannië (GB, bèta) met prijzen in GBP/kWh; README alleen nog in het Engels; testtools bijgewerkt",
+                "fr": "Grande-Bretagne (GB, bêta) avec des prix en GBP/kWh ; README uniquement en anglais ; outils de test mis à jour",
+                "it": "Gran Bretagna (GB, beta) con prezzi in GBP/kWh; README solo in inglese; strumenti di test aggiornati",
+                "es": "Gran Bretaña (GB, beta) con precios en GBP/kWh; README solo en inglés; herramientas de prueba actualizadas",
+                "pl": "Wielka Brytania (GB, beta) z cenami w GBP/kWh; README tylko po angielsku; zaktualizowane narzędzia testowe",
+                "uk": "Велика Британія (GB, бета) з цінами в GBP/kWh; README лише англійською; оновлено засоби тестування",
+                "zh-cn": "新增英国（GB，测试版），价格单位为 GBP/kWh；README 仅保留英文；更新测试工具"
+            },
             "0.1.2": {
                 "en": "State names in all eleven admin languages; retail states only exist for the price basis in use; no empty number states outside a window",
                 "de": "Datenpunktnamen in allen elf Admin-Sprachen; Endpreis-Datenpunkte gibt es nur für die gewählte Preisgrundlage; keine leeren Zahlenwerte außerhalb eines Fensters",
