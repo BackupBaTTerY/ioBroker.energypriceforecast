@@ -52,16 +52,28 @@
                     "value": "FR"
                 },
                 {
-                    "label": "GR – Greece",
-                    "value": "GR"
-                },
-                {
                     "label": "GB – Great Britain (beta)",
                     "value": "GB"
                 },
                 {
+                    "label": "GR – Greece",
+                    "value": "GR"
+                },
+                {
+                    "label": "HR – Croatia",
+                    "value": "HR"
+                },
+                {
+                    "label": "HU – Hungary",
+                    "value": "HU"
+                },
+                {
                     "label": "ITN – Italy North (NORD)",
                     "value": "ITN"
+                },
+                {
+                    "label": "IT_CALA – Italy Calabria (CALA)",
+                    "value": "IT_CALA"
                 },
                 {
                     "label": "IT_CNOR – Italy Centre-North (CNOR)",
@@ -72,20 +84,16 @@
                     "value": "IT_CSUD"
                 },
                 {
-                    "label": "IT_SUD – Italy South (SUD)",
-                    "value": "IT_SUD"
-                },
-                {
-                    "label": "IT_CALA – Italy Calabria (CALA)",
-                    "value": "IT_CALA"
+                    "label": "IT_SARD – Italy Sardinia (SARD)",
+                    "value": "IT_SARD"
                 },
                 {
                     "label": "IT_SICI – Italy Sicily (SICI)",
                     "value": "IT_SICI"
                 },
                 {
-                    "label": "IT_SARD – Italy Sardinia (SARD)",
-                    "value": "IT_SARD"
+                    "label": "IT_SUD – Italy South (SUD)",
+                    "value": "IT_SUD"
                 },
                 {
                     "label": "NL – Netherlands",
@@ -138,6 +146,10 @@
                 {
                     "label": "SE4 – Sweden SE4 (Malmö)",
                     "value": "SE4"
+                },
+                {
+                    "label": "SI – Slovenia",
+                    "value": "SI"
                 },
                 {
                     "label": "SK – Slovakia",
